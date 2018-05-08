@@ -1,0 +1,27 @@
+{
+  "name": "dungeon-game",
+  "version": "1.0.0",
+  "description": "Group project #2 (Tristan, Jeff, Melissa)",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "sequelize": "^4.37.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanhooktristan/Dungeon-Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanhooktristan/Dungeon-Game/issues"
+  },
+  "homepage": "https://github.com/vanhooktristan/Dungeon-Game#readme"
+}
