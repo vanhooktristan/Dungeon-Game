@@ -1,4 +1,4 @@
 -- Drops the monsters if it exists currently --
-DROP DATABASE IF EXISTS monsters_db;
+DROP DATABASE IF EXISTS game_db;
 
-CREATE DATABASE monsters_db;
+CREATE DATABASE game_db;
