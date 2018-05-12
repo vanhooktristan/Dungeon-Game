@@ -1,0 +1,17 @@
+
+body {
+   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://i.pinimg.com/originals/3e/83/56/3e8356a76447fda479430313be958353.jpg") 
+      no-repeat center center fixed;
+   opacity: 1.00;
+   background-size: cover;
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+}
+
+h1 {
+    font-family: 'Nosifer', cursive;
+    font-size: 97px;
+    color: #cc0000;
+    text-shadow: 10px 10px 3px black, 0 0 4px #999999, 0 0 2px #ffffb3;  
+}
