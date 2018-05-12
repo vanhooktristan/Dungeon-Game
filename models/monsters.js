@@ -16,17 +16,21 @@ module.exports = function (sequelize, DataTypes) {
     strength: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: 0
+      defaultValue: 2
     },
     vitality: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: 0
+      defaultValue: 2
     },
     agility: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: 0
+      defaultValue: 2
+    },
+    image: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   });
   return monsters;
