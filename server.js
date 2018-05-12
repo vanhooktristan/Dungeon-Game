@@ -21,4 +21,4 @@ db.sequelize.sync({ force: true}).then(function() {
   });
 });
 
-//hello
+
