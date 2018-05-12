@@ -1,0 +1,17 @@
+
+h1 {
+    font-family: 'Nosifer', cursive;
+    font-size: 97px;
+    color: #cc0000;
+    text-shadow: 10px 10px 3px black, 0 0 4px #999999, 0 0 2px #ffffb3;  
+}
+
+.form-area {
+    height: 400px;
+    background-color: tan;
+}
+
+.character-area {
+    height: 400px;
+    background-color: lightblue;
+}
