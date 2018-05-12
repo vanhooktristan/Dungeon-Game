@@ -11,5 +11,10 @@ module.exports = function (app) {
   app.get("/add", (req, res) => {
   	res.render("character");
   });
+
+  app.get("/battle", (req,res) => {
+  	res.render("battle");
+  });
+  
 }
 
