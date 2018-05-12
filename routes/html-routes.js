@@ -7,5 +7,9 @@ module.exports = function (app) {
     //  res.render("index");
     res.render("index");
   });
+
+  app.get("/add", (req, res) => {
+  	res.render("character");
+  });
 }
 
