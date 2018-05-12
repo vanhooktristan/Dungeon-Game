@@ -1,6 +1,24 @@
+doctype html
 html
   head
-    script(src="/assets/js/game.js")
+    title Monster Slayer
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/start-game.css">
+    
+    
   body
-    h1 Hello World!
-    p Nothing to see here.
+    div(class="container-fluid")
+      h1(class="my-5") Monster Slayer
+      div(class="start-btn-area")
+        div(class="row")
+          div(class="col-sm-4")
+          div(class="col-sm-4 mt-5")
+            a(href="/character")
+              img(src="/assets/images/start-axe-3.png")
+          div(class="col-sm-4")
+        div(class="row")
+          div(class="col-sm-4")
+          div(class="col-sm-4 text-center")
+            button(type="button" class="btn btn-sm") Game Tutorial
+          div(class="col-sm-4")
