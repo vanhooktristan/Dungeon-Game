@@ -44,5 +44,16 @@ module.exports = function(app) {
       res.json(dbPlayers);
     });
   });
+
+  //GET route for grabbing monster info
+  app.get("/api/monster/:id", (req, res) => {
+    db.monsters.findOne({
+      where: {
+        id: req.params.id
+      }
+    }).then((dbMonster) => {
+      res.json(dbMonster);
+    });
+  });
   
 }
