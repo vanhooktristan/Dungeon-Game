@@ -1,17 +1,92 @@
 
-h1 {
+body {
+   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/images/ruins-pic.jpg") 
+      no-repeat center top scroll;
+   opacity: 1.00;
+   background-size: cover;
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+    padding-top: 15px;
+    zoom: 60%;
+}
+.main-content {
+    padding-top: 200px;
+}
+h2 {
     font-family: 'Nosifer', cursive;
     font-size: 97px;
     color: #cc0000;
     text-shadow: 10px 10px 3px black, 0 0 4px #999999, 0 0 2px #ffffb3;  
 }
-
+h3 {
+    color: gold;
+}
+p, label {
+    font-size: 1.5em;
+}
 .form-area {
-    height: 400px;
-    background-color: tan;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: gold;
+}
+#name-input, #strength-input, #vitality-input, #agility-input, .select {
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: gold;
+}
+#img-input, #name-input {
+    font-size: 1.2em;
+    font-weight: bold;      
+}
+.card {
+    background-color: #00cc00;
+    border-color: black;
+    border-width: 3px;
+}
+.slayer {
+    width: 125px;
+    height: 140px;
+}
+#slayer-img-lg {
+    width: auto;
+    height: auto;
+    -webkit-filter: drop-shadow(2px 2px 2px #e6e6e6);
+    filter: drop-shadow(2px 2px 2px #e6e6e6);
+}
+#slayer-create-btn  {
+    background-color: gold;
+    font-family: 'Nosifer', cursive;
+    font-size: 25px;
+    line-height: 15px;
+    color: #cc0000;
+    text-shadow: 4px 4px 4px black, 0 0 2px #999999, 0 0 2px #ffffb3;     
 }
 
-.character-area {
-    height: 400px;
-    background-color: lightblue;
+#new-slayer-cfm {
+    text-align: center;
+    width: 650px;
+    height: 700px;
+    background-color: #e6c300;
+    position: absolute;
+}
+#new-slayer-cfm-btn, #new-slayer-go-back-btn  {
+    background-color: gold;
+    border-color: black;
+    font-family: 'Nosifer', cursive;
+    color: #cc0000;
+    text-shadow: 4px 4px 4px black, 0 0 2px #999999, 0 0 2px #ffffb3;     
+}
+
+.modal-header, .modal-title, .modal-footer {
+    background-color: #e6c300;
+    border-top-color: black;
+    border-bottom-color: black;
+    font-family: 'Nosifer', cursive;
+    color: #cc0000;
+    text-shadow: 4px 4px 4px black, 0 0 2px #999999, 0 0 2px #ffffb3;     
+}
+.modal-body {
+  background-color: #e6c300;
+}
+.modal-content {
+  border: none;
 }
