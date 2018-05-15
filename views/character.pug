@@ -1,19 +1,86 @@
-doctype html
 html
   head
     title Monster Slayer
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
     <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../assets/css/character.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="../assets/js/character.js"></script>
   body
-    div(class="container-fluid")
-      h1(class="my-2 text-center") Monster Slayer
-      h3(class="text-center") Create a new game character
-    div(class="container text-center")
-      div(class="row")
-        div(class="col-sm-6 form-area")
-          div(class="form-group")
-        div(class="col-sm-6 character-area")
-    div(class="footer text-center pt-2")
-      button(type="button" class="btn btn-sm") Submit
- 
+    
+    div.container-fluid.header.pt-3
+      h2.text-center Monster Slayer
+      h3.text-center Character creation
+    div.container-fluid.text-center
+      div.container-fluid.main-content.pr-0.mb-5
+        div.row
+          div.col-sm-4.form-area.float-left.container-fluid
+            div.form-group.mt-3
+              form(method='POST' action='/api/character')
+                div.form-group
+                  strong
+                   p.mt-3.mb-2.text-left Pick a Slayer character from the images on the right. 
+                   p#image-input 
+                div.form-group.text-left
+                  strong
+                    label.mb-1.font-weight-bold(for="name-input") Give your Slayer a name:
+                    input#name-input.form-control.col-sm-12(type="text", name="name-input")
+                    p.mt-3.mb-0.text-left  Set each of your character's traits below so that the sum of their values equal 9 points. 
+                div.form-group
+                  strong
+                    label.mr-2(for="strength-input") Set Slayer strength:
+                    select#strength-input.option.col-sm-3.float-right
+                      option(value="selected")
+                      option(value="2") 2
+                      option(value="3") 3
+                      option(value="4") 4
+                      option(value="5") 5
+                div.form-group
+                  strong
+                    label.mr-2(for="vitality-input") Set Slayer vitality:
+                    select#vitality-input.option.col-sm-3.float-right
+                      option(value="selected")
+                      option(value="2") 2
+                      option(value="3") 3
+                      option(value="4") 4
+                      option(value="5") 5
+                div.form-group
+                  strong
+                    label.mr-2(for="agility-input") Set Slayer agility:
+                    select#agility-input.option.col-sm-3.float-right  
+                      option(value="selected")
+                      option(value="2") 2
+                      option(value="3") 3
+                      option(value="4") 4
+                      option(value="5") 5
+                button#slayer-create-btn(type="submit" class="btn btn-lg") Submit
+          div.col-sm-3
+            div#new-slayer-cfm.modal.fade.rounded.text-center(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+              div.modal-dialog.m-auto.border-none(role="document")
+                div.modal-content.border-none
+                  div.modal-header
+                    h3.modal-title Confirm New Slayer
+                  div.modal-body.border-none  
+                    strong
+                      p You have selected the following: 
+                      p Your selected Slayer image is: <span id="cfm-slayer-img"></span>
+                      p Your Slayer's name is: <span id="cfm-slayer-name"></span>
+                      p Your Slayer's strength is: <span id="cfm-slayer-strength"></span>
+                      p Your Slayer's vitality is: <span id="cfm-slayer-vitality"></span>
+                      p Your Slayer's agility is : <span id="cfm-slayer-agility"></span> 
+                  div.modal-footer
+                    button#new-slayer-go-back-btn.btn-lg.mr-3(type="button" data-dismiss="modal") Go Back
+                    button#new-slayer-cfm-btn.btn-lg.ml-3(type="button") Confirm
+          div.slayer-img-area.col-sm-4.mt-5.text-center.container-fluid.float-left      
+          div.col-sm-1.character-area.container-fluid.float-left
+            div.card-column.float-right
+              div.card
+                img#slayer-img-1.slayer(src="/assets/images/slayer-img-1.png" data-slayer-value="slayer-img-1.png" name="Slayer 1")
+              div.card.mt-1
+                img#slayer-img-2.slayer(src="/assets/images/slayer-img-2.png" data-slayer-value="slayer-img-2.png" name="Slayer 2")
+              div.card.mt-1
+                img#slayer-img-3.slayer(src="/assets/images/slayer-img-3.png" data-slayer-value="slayer-img-3.png" name="Slayer 3")
+              div.card.mt-1
+                img#slayer-img-4.slayer(src="/assets/images/slayer-img-4.png" data-slayer-value="slayer-img-4.png" name="Slayer 4")   
