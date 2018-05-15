@@ -20,7 +20,7 @@ Character.prototype.battle =  function(opponent) {
 
   function round(a, d) {
     var damage = Math.ceil(((a.str/2) * 2.5) - d.def/2);
-  var chance = Math.ceil((a.spd/d.spd) * 20 + ((Math.random()*100)+ 50));
+    var chance = Math.ceil((a.spd/d.spd) * 20 + ((Math.random()*100)+ 50));
 
     console.log(a.name + ": " + a.hp + " || " + d.name + ": " + d.hp);
   
