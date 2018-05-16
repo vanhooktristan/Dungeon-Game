@@ -91,13 +91,17 @@ select.option {
     background-color: #e6c300;
     position: absolute;
 }
-
-#new-slayer-cfm-btn, #new-slayer-go-back-btn, #trait-sum-go-back-btn, #slayer-error-go-back-btn, #battle-btn  {
+#new-slayer-cfm-btn, #new-slayer-go-back-btn, #trait-sum-go-back-btn, #slayer-error-go-back-btn, #battle-btn {
     background-color: gold;
     border-color: black;
     font-family: 'Nosifer', cursive;
     color: #cc0000;
     text-shadow: 4px 4px 4px black, 0 0 2px #999999, 0 0 2px #ffffb3;     
+}
+#battle-btn .modal-body h3 {
+    color: black;
+    font-size: 23px;
+    line-height: 40px;
 }
 .modal-header, .modal-title, .modal-footer {
     background-color: #e6c300;
