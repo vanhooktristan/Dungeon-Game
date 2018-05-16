@@ -27,7 +27,7 @@ html
 
     div(class="row")
       div(class="col-lg-4" id="player_space")
-        h2 #{players.name}
+        h2= player.name
         h3 Player Picture
 
       div(class="col-lg-4" id="summary_space")
@@ -43,9 +43,10 @@ html
         button(id="attack") Attack!
 
 
+    #test
+      //- for players in player
+      p= player.name
       
-    
-          
 
 
 

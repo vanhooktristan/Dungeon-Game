@@ -1,5 +1,5 @@
 var path = require("path");
-var models = require("../models");
+var db = require("../models");
 
 module.exports = function (app) {
 
@@ -14,8 +14,31 @@ module.exports = function (app) {
   });
 
   app.get("/battle", (req,res) => {
-  	res.render("battle");
+    db.players.findOne({
+      where: {
+        id: 1
+      }
+    }).then((dbPlayers) => {
+      // var playerInfo= {
+      // player: dbPlayers
+      // };
+      // return res.render("battle", {player: dbPlayers});
+      var playerInfo = {
+        name: dbPlayers.name,
+        image: dbPlayers.image,
+        level: dbPlayers.level,
+        strength: dbPlayers.strength,
+        vitality: dbPlayers.vitatlity,
+        agility: dbPlayers.agility
+      }
+      return res.render("battle", {player: playerInfo});
+    });
+
+    
+    
   
   });
-}
+  
+};
+
 
