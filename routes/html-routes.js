@@ -33,12 +33,7 @@ module.exports = function (app) {
       }
       return res.render("battle", {player: playerInfo});
     });
-
-    
-    
-  
-  });
-  
+  });  
 };
 
 
