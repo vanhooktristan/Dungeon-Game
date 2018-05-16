@@ -28,7 +28,7 @@ Character.prototype.battle =  function(opponent) {
       d.hp -= damage;
       console.log(d.name + " took " + damage + " damage!");
     } else {
-      console.log(a.name + " missed the attack");
+      console.log("You missed the attack");
     }
     console.log(a.name + ": " + a.hp + " || " + d.name + ": " + d.hp);
     console.log("Damage: " + damage, "Chance: " + chance);
@@ -41,6 +41,13 @@ Character.prototype.battle =  function(opponent) {
 
 var player1 = new Character("Mel", 4, 3, 2);
 var monster1 = new Character("Wolf", 2, 5, 2);
+
+//for testing purposes
+var count = 1
+while ((player1.hp > 0) && (monster1.hp > 0)){
   
+  console.log("Round " + count);
   player1.battle(monster1);
   console.log("---------");
+  count += 1
+}
