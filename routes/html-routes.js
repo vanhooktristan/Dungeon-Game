@@ -1,4 +1,5 @@
 var path = require("path");
+var models = require("../models");
 
 module.exports = function (app) {
 
@@ -14,7 +15,7 @@ module.exports = function (app) {
 
   app.get("/battle", (req,res) => {
   	res.render("battle");
-  });
   
+  });
 }
 
