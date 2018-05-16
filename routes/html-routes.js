@@ -16,13 +16,9 @@ module.exports = function (app) {
   app.get("/battle", (req,res) => {
     db.players.findOne({
       where: {
-        id: 1
+        id: 3
       }
     }).then((dbPlayers) => {
-      // var playerInfo= {
-      // player: dbPlayers
-      // };
-      // return res.render("battle", {player: dbPlayers});
       var playerInfo = {
         name: dbPlayers.name,
         image: dbPlayers.image,
