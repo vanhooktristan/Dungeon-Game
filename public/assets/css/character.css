@@ -29,6 +29,9 @@ p, label {
     background-color: rgba(0, 0, 0, 0.3);
     color: gold;
 }
+select.option {
+    height: 35px; 
+}
 #name-input, #strength-input, #vitality-input, #agility-input, .select {
     background-color: rgba(0, 0, 0, 0.3); 
     color: gold;
@@ -60,22 +63,27 @@ p, label {
     color: #cc0000;
     text-shadow: 4px 4px 4px black, 0 0 2px #999999, 0 0 2px #ffffb3;     
 }
-
 #new-slayer-cfm {
     text-align: center;
-    width: 650px;
-    height: 700px;
+    width: 700px;
+    height: 600px;
     background-color: #e6c300;
     position: absolute;
 }
-#new-slayer-cfm-btn, #new-slayer-go-back-btn  {
+#trait-sum-modal {
+    text-align: center;
+    width: 750px;
+    height: 530px;
+    background-color: #e6c300;
+    position: absolute;
+}
+#new-slayer-cfm-btn, #new-slayer-go-back-btn, #trait-sum-go-back-btn  {
     background-color: gold;
     border-color: black;
     font-family: 'Nosifer', cursive;
     color: #cc0000;
     text-shadow: 4px 4px 4px black, 0 0 2px #999999, 0 0 2px #ffffb3;     
 }
-
 .modal-header, .modal-title, .modal-footer {
     background-color: #e6c300;
     border-top-color: black;
@@ -86,7 +94,24 @@ p, label {
 }
 .modal-body {
   background-color: #e6c300;
+  padding: 0;
 }
+td {
+  color: black;
+  font-weight: bold;  
+}
+#new-slayer-cfm th {
+  color: black;
+  font-size: 23px;
+  line-height: 70px; 
+  margin-bottom: 15px;
+} 
+#trait-sum-modal th {
+  color: black;
+  font-size: 24px;
+  line-height: 70px; 
+} 
 .modal-content {
   border: none;
 }
+
