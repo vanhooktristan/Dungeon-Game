@@ -16,7 +16,7 @@ module.exports = function (app) {
   app.get("/battle", (req,res) => {
     db.players.findOne({
       where: {
-        id: 1
+        id: 4
       }
     }).then((dbPlayers) => {
       // var playerInfo= {
