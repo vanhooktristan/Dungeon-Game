@@ -39,12 +39,13 @@ h2 {
 
 footer {
 	margin-top: -13%;
+}
 .modal-header, .modal-title, .modal-footer, .modal-body {
 	background-color: maroon;
 	font-family: 'Nosifer', cursive;
 	color: white;
 	text-shadow: 4px 4px 4px black, 0 0 2px #999999, 0 0 2px #ffffb3;     
-}
+
 
 .btn, .btn-lg {
   background-color: white;
