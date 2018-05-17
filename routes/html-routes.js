@@ -9,7 +9,7 @@ module.exports = function (app) {
   });
 
   app.get("/character", (req, res) => {
-  	res.render("character");
+    res.render("character");
   });
 
   app.get("/battle", (req,res) => {
@@ -32,4 +32,3 @@ module.exports = function (app) {
   });
   
 }
-

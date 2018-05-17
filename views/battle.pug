@@ -29,6 +29,7 @@ html
         -var i = 1
           h2= player[i].name
           img.image(src='./assets/images/' + player[i].image)
+          button(id="attack") Attack!!
       
 
       div(class="col-lg-4" id="summary_space")
@@ -39,21 +40,6 @@ html
         -var j = 0
           h2= player[j].name
           img.image(src='./assets/images/' + player[j].image)
-        
-
-
-    div(class="row")
-      div(class="col-lg-4" id="player_attack")
-        button(id="attack") Attack!
-
-
-    #test
-    
-      
-      
-      
-
-
 
     footer
       h4(class="my-5 text-center") Monster Slayer
