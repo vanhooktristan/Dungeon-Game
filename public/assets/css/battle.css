@@ -29,6 +29,9 @@ h4 {
 	margin-bottom: 20px;
 }
 
+img {
+	height: 50%;
+}
 
 h1 {
 	text-align: center;
@@ -37,17 +40,14 @@ h1 {
 
 #player_space {
 	text-align: center;
-	margin-bottom: 10%;
 }
 
 #summary_space {
 	text-align: center;
-	margin-bottom: 10%;
 }
 
 #monster_space {
 	text-align: center;
-	margin-bottom: 10%;
 }
 
 #player_attack {
@@ -55,11 +55,11 @@ h1 {
 }
 
 button {
+	margin-bottom: 60px;
 	width: 20%;
 }
 
 footer {
-	margin-top: 10%;
 	width: 100%;
 	text-align: center;
 }

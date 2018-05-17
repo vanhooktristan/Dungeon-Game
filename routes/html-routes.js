@@ -5,16 +5,18 @@ module.exports = function (app) {
 
 
   app.get("/", (req, res) => {
-    //  res.render("index");
     res.render("index");
   });
 
   app.get("/character", (req, res) => {
-  	res.render("character");
+    res.render("character");
   });
 
   app.get("/battle", (req,res) => {
-    db.sequelize.query("SELECT * from players").spread((dbPlayers, meta) => {
+    // db.players.findAll({
+      db.sequelize.query("select * from players").spread((dbPlayers, meta) => {
+
+        // select * from monsters union all 
       // var playerInfo = {
       //   name: dbPlayers.name,
       //   image: dbPlayers.image,
@@ -25,7 +27,10 @@ module.exports = function (app) {
       // }
       return res.render("battle", {player: dbPlayers});
     });
-  });  
-};
 
-
+    
+    
+  
+  });
+  
+}
