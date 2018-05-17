@@ -5,7 +5,6 @@ module.exports = function (app) {
 
 
   app.get("/", (req, res) => {
-    //  res.render("index");
     res.render("index");
   });
 
@@ -14,20 +13,17 @@ module.exports = function (app) {
   });
 
   app.get("/battle", (req,res) => {
-    db.players.findOne({
-      where: {
-        id: 3
-      }
-    }).then((dbPlayers) => {
-      var playerInfo = {
-        name: dbPlayers.name,
-        image: dbPlayers.image,
-        level: dbPlayers.level,
-        strength: dbPlayers.strength,
-        vitality: dbPlayers.vitatlity,
-        agility: dbPlayers.agility
-      }
-      return res.render("battle", {player: playerInfo});
+    // db.players.findAll({
+      db.sequelize.query(" select * from monsters union all select * from players").spread((dbPlayers, meta) => {
+      // var playerInfo = {
+      //   name: dbPlayers.name,
+      //   image: dbPlayers.image,
+      //   level: dbPlayers.level,
+      //   strength: dbPlayers.strength,
+      //   vitality: dbPlayers.vitatlity,
+      //   agility: dbPlayers.agility
+      // }
+      return res.render("battle", {player: dbPlayers});
     });
 
     

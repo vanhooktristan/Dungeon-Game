@@ -22,7 +22,7 @@ h4 {
 	margin-right: 10px;
 	margin-left: 10px;
 	margin-top: 20px;
-	margin-bottom: 10%;
+	
 }
 .progress {
 	width: 100%;
@@ -58,8 +58,8 @@ button {
 	width: 20%;
 }
 
-footer {
+/* footer {
 	margin-top: 10%;
 	width: 100%;
 	text-align: center;
-}
+} */
