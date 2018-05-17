@@ -1,15 +1,11 @@
 body {
-   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://img.etsystatic.com/il/308cfd/998470372/il_fullxfull.998470372_53g9.jpg?version=0") 
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://img.etsystatic.com/il/308cfd/998470372/il_fullxfull.998470372_53g9.jpg?version=0") 
       no-repeat center center fixed;
-   opacity: 1.00;
-   background-size: cover;
-   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; 
-}
-
-footer {
-	align-items: center;
+	opacity: 1.00;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover; 
 }
 
 h4 {
@@ -18,48 +14,8 @@ h4 {
     color: #cc0000;
     text-shadow: 10px 10px 3px black, 0 0 4px #999999, 0 0 2px #ffffb3;  
 }
-#health_bars {
-	margin-right: 10px;
-	margin-left: 10px;
-	margin-top: 20px;
-	
-}
-.progress {
-	width: 100%;
-	margin-bottom: 20px;
-}
-
-img {
-	height: 50%;
-}
 
 h1 {
 	text-align: center;
 	color: red;
-}
-
-#player_space {
-	text-align: center;
-}
-
-#summary_space {
-	text-align: center;
-}
-
-#monster_space {
-	text-align: center;
-}
-
-#player_attack {
-	text-align: center;
-}
-
-button {
-	margin-bottom: 60px;
-	width: 20%;
-}
-
-footer {
-	width: 100%;
-	text-align: center;
 }
