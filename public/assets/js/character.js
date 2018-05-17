@@ -116,17 +116,15 @@ $(function () {
       type: "POST",
       data: newSlayer
     }).then(function (result) {
-      if (result.createdAt) {
-        $(".slayer-img-area").empty();
-        $("#image-input").empty();
-        $("#name-input").val("");
-        $("#strength-input").empty();
-        $("#vitality-input").empty();
-        $("#agility-input").empty();
-        // send modal to inform player they are ready for battle. 
-        $("#battle-modal").modal("show");
-      }
+      $(".slayer-img-area").empty();
+      $("#image-input").empty();
+      $("#name-input").val("");
+      $("#strength-input").empty();
+      $("#vitality-input").empty();
+      $("#agility-input").empty();
+      // send modal to inform player they are ready for battle. 
+      $("#battle-modal").modal("show");
     });
   });
-  
+
 });
