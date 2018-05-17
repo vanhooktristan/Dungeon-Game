@@ -1,5 +1,3 @@
-
-
 function Character(name, str, vit, agi) {
   this.name = name;
   this.str = str;
@@ -14,7 +12,6 @@ Character.prototype.printStats = function() {
   console.log(this.name, this.str, this.vit, this.agi, this.hp, this.def, this.spd);
 }
 
-//needs to be edited for nontesting purposes
 Character.prototype.battle =  function(opponent) {
   
 
@@ -51,3 +48,4 @@ while ((player1.hp > 0) && (monster1.hp > 0)){
   console.log("---------");
   count += 1
 }
+

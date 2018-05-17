@@ -57,7 +57,7 @@ module.exports = function(app) {
   });
 
   app.get("/api/character", (req, res) => {
-    db.sequelize.query("select 'Monster' As Type, name, level, image, strength, vitality, agility from monsters union select 'Player', name, level, image,strength, vitality, agility from players As Characters").spread((dbPlayer, meta) => {
+    db.sequelize.query("select 'Monster' As Type, id, name, level, image, strength, vitality, agility from monsters union select 'Player', id, name, level, image,strength, vitality, agility from players order by type, id DESC").spread((dbPlayer, meta) => {
       res.json(dbPlayer);
     });
   });
