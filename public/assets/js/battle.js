@@ -25,7 +25,7 @@ $(function () {
 
       $("#health_player").text("Health: " + player1.hp);
       $("#health_monster").text("Health: " + monster1.hp);
-    }
+      }
     });
   });
 
