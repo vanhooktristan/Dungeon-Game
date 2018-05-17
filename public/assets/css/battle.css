@@ -8,6 +8,10 @@ body {
 	-o-background-size: cover; 
 }
 
+a:visited {
+	color: #cc0000;
+}
+
 h4 {
     font-family: 'Nosifer', cursive;
     font-size: 24px;
@@ -18,4 +22,28 @@ h4 {
 h1 {
 	text-align: center;
 	color: red;
+}
+
+h2 {
+	color: white;
+}
+
+#player_health {
+	text-align: left;
+}
+
+#monster_health {
+	text-align: right;
+}
+
+#monster_space img {
+	width: 100%;
+}
+
+#player_space img {
+	width: 100%;
+}
+
+footer {
+	margin-top: -5%;
 }
