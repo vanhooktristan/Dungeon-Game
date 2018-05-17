@@ -31,6 +31,12 @@ module.exports = function (app) {
         vitality: dbPlayers.vitatlity,
         agility: dbPlayers.agility
       }
+
+      var MonsterInfo = {
+        name: dbMonsters.name,
+        image: dbMonsters.image,
+        level: dbMonsters.level
+      }
       return res.render("battle", {player: playerInfo});
     });
   });  
