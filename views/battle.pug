@@ -5,7 +5,8 @@ html
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
     <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../assets/css/battle.css">
-    <script src="../assets/js/game.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="../assets/js/battle.js"></script>
     
     
   body
@@ -14,26 +15,31 @@ html
         div(class="progress")
           div(class="progress-bar progress-bar-striped bg-success" id="player_health" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
 
-        h1 Health #
+        h1#health_player
       div(class="col-lg-4")
-        h1 Round
+        h1#round_num
       div(class="col-lg-4")
         div(class="progress")
           div(class="progress-bar progress-bar-striped bg-success" id="player_health" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
 
-        h1 Health #
+        h1#health_monster
 
     div(class="row")
       div(class="col-lg-4" id="player_space")
-        h2= player.name
-        img.image(src="./assets/images/" + player.image)
+        -var i = 1
+          h2= player[i].name
+          img.image(src='./assets/images/' + player[i].image)
+      
 
       div(class="col-lg-4" id="summary_space")
         h2 Round Info
+        #round_info
 
       div(class="col-lg-4" id="monster_space")
-        h2 Player 1
-        h3 Player Picture
+        -var j = 0
+          h2= player[j].name
+          img.image(src='./assets/images/' + player[j].image)
+        
 
 
     div(class="row")
@@ -42,12 +48,13 @@ html
 
 
     #test
-      //- for players in player
-      p= player.name
+    
+      
+      
       
 
 
 
     footer
-      h4(class="my-5") Monster Slayer
+      h4(class="my-5 text-center") Monster Slayer
       
