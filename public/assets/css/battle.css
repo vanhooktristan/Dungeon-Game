@@ -28,6 +28,17 @@ h2 {
 	color: white;
 }
 
+
+#monster_space img {
+	height: 70%;
+}
+
+#player_space img {
+	height: 70%;
+}
+
+footer {
+	margin-top: -13%;
 .modal-header, .modal-title, .modal-footer, .modal-body {
 	background-color: maroon;
 	font-family: 'Nosifer', cursive;
