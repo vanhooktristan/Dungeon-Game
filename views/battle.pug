@@ -6,6 +6,7 @@ html
     <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../assets/css/battle.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="../assets/js/battle.js"></script>
     
     
@@ -32,14 +33,28 @@ html
             img.image(src='./assets/images/' + player[i].image)
 
         div(class="col-lg-4 text-center" id="summary_space")
-          button#attack.btn Attack!!
-          h2 Round Info
-          #round_info
-
+          div.row
+            button#attack.btn Attack!!
+            h2 Round Info
+            #round_info
+    
         div(class="col-lg-4 text-center" id="monster_space")
           -var j = 0
             h2= player[j].name
             img.image(src='./assets/images/' + player[j].image)
+
+        div#win-loss-modal.modal.fade.rounded(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+          div.modal-dialog.modal-dialog-centered.border-none(role="document")
+            div.modal-content.m-auto.border-none
+              div.modal-header.text-center.border-0
+                h3.modal-title.text-center.m-auto Battle Result!
+              div.modal-body.text-center.border-0 
+                strong
+                  h3 You have 
+                    span#win-loss-msg
+              div.modal-footer.text-center.border-0
+                button#win-loss-btn.btn-lg.m-auto(type="button") 
+                  a(href="/") Quit
 
       footer.text-center
         h4(class="my-5 text-center") Monster Slayer
