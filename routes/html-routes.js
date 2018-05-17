@@ -14,7 +14,7 @@ module.exports = function (app) {
   });
 
   app.get("/battle", (req,res) => {
-    db.sequelize.query(" select * from monsters union all select * from players").spread((dbPlayers, meta) => {
+    db.sequelize.query(" SELECT * from monsters union all SELECT * from players").spread((dbPlayers, meta) => {
       // var playerInfo = {
       //   name: dbPlayers.name,
       //   image: dbPlayers.image,
