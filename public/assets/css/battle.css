@@ -15,35 +15,31 @@ a:visited {
 h4 {
     font-family: 'Nosifer', cursive;
     font-size: 24px;
-    color: #cc0000;
+    color: maroon;
     text-shadow: 10px 10px 3px black, 0 0 4px #999999, 0 0 2px #ffffb3;  
 }
 
 h1 {
 	text-align: center;
-	color: red;
+	color: maroon;
 }
 
 h2 {
 	color: white;
 }
 
-#player_health {
-	text-align: left;
+.modal-header, .modal-title, .modal-footer, .modal-body {
+	background-color: maroon;
+	font-family: 'Nosifer', cursive;
+	color: white;
+	text-shadow: 4px 4px 4px black, 0 0 2px #999999, 0 0 2px #ffffb3;     
 }
 
-#monster_health {
-	text-align: right;
-}
-
-#monster_space img {
-	width: 100%;
-}
-
-#player_space img {
-	width: 100%;
-}
-
-footer {
-	margin-top: -5%;
+.btn, .btn-lg {
+  background-color: white;
+    font-family: 'Nosifer', cursive;
+    font-size: 25px;
+    line-height: 15px;
+    color: maroon;
+    text-shadow: 4px 4px 4px black, 0 0 2px #999999, 0 0 2px #ff4c4c;
 }
