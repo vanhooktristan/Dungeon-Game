@@ -55,5 +55,11 @@ module.exports = function(app) {
       res.json(dbMonster);
     });
   });
+
+  app.get("/api/character", (req, res) => {
+    db.sequelize.query("select 'Monster' As Type, name, level, image, strength, vitality, agility from monsters union select 'Player', name, level, image,strength, vitality, agility from players As Characters").spread((dbPlayer, meta) => {
+      res.json(dbPlayer);
+    });
+  });
   
 }
